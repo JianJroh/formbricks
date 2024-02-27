@@ -36,7 +36,7 @@ export const initialize = async (
   let existingConfig: TJsConfig | undefined;
   try {
     existingConfig = config.get();
-  } catch (e) {
+  } catch (error) {
     logger.debug("No existing configuration found.");
   }
 
